@@ -620,3 +620,12 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}

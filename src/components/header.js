@@ -14,9 +14,11 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: `flex`,
+        justifyContent: `space-between`
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h4 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,7 +28,14 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h4>
+      <div style={{color: 'white', margin: `0 -1rem`}}>
+        <Link style={{color: 'white'}} className="mx-1" to="/schedule/">Schedule</Link>
+        <Link style={{color: 'white'}} className="mx-1" to="/approach/">Approach</Link>
+        <Link style={{color: 'white'}} className="mx-1" to="/teams/">Teams</Link>
+        <Link style={{color: 'white'}} className="mx-1" to="/coaches/">Coaches</Link>
+        <Link style={{color: 'white'}} className="mx-1" to="/volunteers/">Volunteers</Link>
+      </div>
     </div>
   </header>
 )
