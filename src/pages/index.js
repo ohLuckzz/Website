@@ -4,10 +4,18 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import LandingImage from '../images/pitching.png'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div className="relative mb-16">
+      <div className="absolute z-10 home-img-text-container rounded shadow">
+        <h1 className="text-white px-4 ">Welcome to HAVOC</h1>
+      </div>
+      <div className="home-img-overlay" />
+      <div className="w-full home-img" />
+    </div>
     <h3>Welcome to the HAVOC! The High Country Havoc is a non-profit youth baseball organization located in Boone, NC. We are an affiliate of the Big League Camp, enabling us to leverage the extensive knowledge provided by a network of college coaches, professional coaches, and Major League Baseball scouts. </h3>
     <p><i>Our Vision…</i>is to create a model youth sports organization in the High Country that fosters an environment where kids deepen their love of baseball, build lifelong friendships, and learn valuable life lessons and skills. </p>
     <p><i>Our Mission…</i>is to complement and partner with other youth sports organizations in our area, offering additional competitive opportunities for kids in the High Country while adopting the most innovative practices in youth athlete development. </p>

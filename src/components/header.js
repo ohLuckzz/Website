@@ -1,44 +1,83 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: `flex`,
-        justifyContent: `space-between`
-      }}
+import PropTypes from "prop-types"
+import React, { useState, useEffect } from "react"
+import Logo from '../images/logo.png';
+
+
+const Header = ({ siteTitle }) => {
+  
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [fixed, setFixed] = useState(false)
+
+  const scrollFn = () => {
+    const headerPosition = document.querySelector("header").offsetHeight
+    const shouldBeFixed = window.pageYOffset > headerPosition
+    setFixed(shouldBeFixed)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollFn)
+    // return window.removeEventListener('scroll', scrollFn);
+  }, [])
+
+  const getLinks = () => {
+    return (
+      <>
+        <Link className="my-4 text-white mx-4" to="/schedule/">Schedule</Link>
+        <Link className="my-4 text-white mx-4" to="/approach/">Approach</Link>
+        <Link className="my-4 text-white mx-4" to="/teams/">Teams</Link>
+        <Link className="my-4 text-white mx-4" to="/coaches/">Coaches</Link>
+        <Link className="my-4 text-white mx-4" to="/volunteers/">Volunteers</Link>
+      </>
+    )
+  }
+
+  const renderDesktop = (links) => {
+    return (
+      <div className="text-white -mx-4 hidden sm:block">
+        {links}
+      </div>
+    )
+  }
+
+  const renderMobile = (links) => {
+    return (
+      <>
+        <div
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="block sm:hidden -mx-4 cursor-pointer">
+          <FontAwesomeIcon color={"white"} size={"2x"} className="mx-4" icon={"bars"} />
+        </div>
+        <div className={`${!menuOpen && `hidden`} flex shadow absolute header-nav w-full primary-bg z-20`}>
+          {links}
+        </div>
+      </>
+    )
+
+  }
+
+
+  return (
+    <header
+      className={`${fixed ? `fixed` : `absolute`} primary-bg shadow-md z-20 w-full`}
     >
-      <h4 style={{ margin: 0 }}>
+      <div
+        className="relative items-center flex justify-between container py-4 px-10 m-center sm:px-0"
+      >
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className="md-img"
         >
-          {siteTitle}
+          <img src={Logo} />
         </Link>
-      </h4>
-      <div style={{color: 'white', margin: `0 -1rem`}}>
-        <Link style={{color: 'white'}} className="mx-1" to="/schedule/">Schedule</Link>
-        <Link style={{color: 'white'}} className="mx-1" to="/approach/">Approach</Link>
-        <Link style={{color: 'white'}} className="mx-1" to="/teams/">Teams</Link>
-        <Link style={{color: 'white'}} className="mx-1" to="/coaches/">Coaches</Link>
-        <Link style={{color: 'white'}} className="mx-1" to="/volunteers/">Volunteers</Link>
+        {renderDesktop(getLinks())}
+        {renderMobile(getLinks())}
       </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -48,4 +87,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Header;

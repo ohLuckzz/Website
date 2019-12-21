@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-5xl font-bold;
+}
+
+header {
+    transition: slide-down 1s;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    } 
+}
+
+
+.primary-bg {
+    background-color: #12459b;
+}
+
+.primary-color {
+    color: #12459b;
+}
+
+.m-center {
+    margin: 0 auto;
+}
+
+.md-img {
+    width: 90px;
+    min-width: 90px;
+}
+
+.home-img {
+    background-image: url(../images/pitching.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-img-overlay {
+    background-color: #4684b7;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.home-img,
+.home-img-overlay {
+    height: 500px;
+}
+
+.home-img-text-container {
+    bottom: -15px;
+    @apply primary-bg;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.header-nav {
+    left: 0;
+    top: 113px;
+    flex-direction: column;
+}
+
+@media (max-width: 640px) {
+
+    h1 {
+        @apply text-3xl;
+    }
+
+    .home-img,
+    .home-img-overlay {
+        height: 300px;
+    }
+}
