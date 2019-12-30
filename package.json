@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.30",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1",
+    "react-photo-gallery": "^8.0.0",
     "tailwindcss": "^1.1.4"
   },
   "keywords": [

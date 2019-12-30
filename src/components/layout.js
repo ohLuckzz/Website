@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import '../utils/fontawesome'
-// import "./layout.css"
+import "../utils/fontawesome"
+import "./table.css"
 import "./index.css"
 
 const Layout = ({ children }) => {
@@ -28,10 +28,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+      <div style={{ paddingTop: "114px" }}>
         <main>{children}</main>
-        <footer>
-        </footer>
+        <footer></footer>
       </div>
     </>
   )
