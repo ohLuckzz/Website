@@ -6,6 +6,8 @@ import {
   faUserFriends,
   faBullseye,
   faPeopleCarry,
+  faEnvelope,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons"
 const icons = [
   faBars,
@@ -14,5 +16,7 @@ const icons = [
   faUserFriends,
   faBullseye,
   faPeopleCarry,
+  faEnvelope,
+  faPhone,
 ]
 library.add(icons)
