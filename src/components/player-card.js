@@ -7,16 +7,18 @@ import React, {
 } from "react"
 
 export default ({ title, body, id, img }) => {
-  const containerHeight =
-    window.innerWidth < 500 ? window.innerWidth / 1.5 : window.innerWidth / 2
+  const [containerHeight, setContainerHeight] = useState(0)
   const [cardHeight, setCardHeight] = useState(false)
   const [fullHeight, setFullHeight] = useState(0)
 
   useLayoutEffect(() => {
     const ourPurposeCard = 60 - document.querySelector(`#${id}`).clientHeight
-
     setFullHeight(ourPurposeCard)
     setCardHeight(ourPurposeCard)
+
+    const _containerHeight =
+      window.innerWidth < 500 ? window.innerWidth / 1.5 : window.innerWidth / 2
+    setContainerHeight(_containerHeight)
   }, [])
 
   const ok = () => {
