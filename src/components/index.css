@@ -89,6 +89,12 @@ a {
   width: 90px;
   min-width: 90px;
 }
+
+.lg-img {
+  width: 150px;
+  min-width: 150px;
+}
+
 .xl-img {
   width: 210px;
   min-width: 210px;

@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
                 <div className="p-2">
                   <FontAwesomeIcon color={"white"} icon={"envelope"} />
                 </div>
-                <a className="p-2 text-white no-underline" href="mailto:markolewis@gmail.com">
+                <a className="p-2 text-white no-underline font-normal" href="mailto:markolewis@gmail.com">
                   markolewis@gmail.com
                 </a>
               </div>
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
                 <div className="p-2">
                   <FontAwesomeIcon color={"white"} icon={"phone"} />
                 </div>
-                <a className="p-2 text-white no-underline" href="tel:857-231-2756">
+                <a className="p-2 text-white no-underline font-normal" href="tel:857-231-2756">
                   857-231-2756
                 </a>
               </div>

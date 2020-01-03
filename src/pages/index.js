@@ -4,6 +4,7 @@ import Gallery from "react-photo-gallery"
 import "@brainhubeu/react-carousel/lib/style.css"
 
 import Logo from "../images/logo.png"
+import Logo2 from "../images/logo_2.png"
 import Teamwork from "../images/teamwork.jpg"
 import Desire from "../images/desire.jpg"
 import Fun from "../images/fun.jpg"
@@ -12,7 +13,7 @@ import Piedmont from "../images/sponsors/piedmont.png"
 import FarmBureau from "../images/sponsors/farm-bureau.png"
 import HighCountryDisaster from "../images/sponsors/hcdisaster.png"
 import ValuesBlock from "../components/values-block"
-import PlayerCard from "../components/player-card"
+import ValueCard from "../components/value-card"
 import CarouselItem from "../components/carousel-item"
 import SponsorItem from "../components/sponsor-item"
 import Layout from "../components/layout"
@@ -84,32 +85,38 @@ const IndexPage = () => {
       </div>
       <div>
         <div className="flex flex-wrap">
-          {/* TODO: Make it like you did before */}
-          <PlayerCard
-            id={"ourPurpose"}
-            img={"home-card-1"}
-            title={"Our Purpose"}
-            body={`Create lifelong memories for our kids, teach
-            valuable lessons through competitive baseball, and develop better
-            athletes that can go on to live active, healthy, and productive lives.`}
-          />
-          <PlayerCard
-            id={"ourMission"}
-            title={"Our Mission"}
-            img={"home-card-2"}
-            body={`Complement and partner with other youth
-            sports organizations in our area, offering additional competitive
-            opportunities for kids in the High Country while adopting the most
-            innovative practices in youth athlete development.`}
-          />
-          <PlayerCard
-            id={"ourVision"}
-            img={"home-card-3"}
-            title={"Our Vision"}
-            body={`Create a model youth sports organization in the High Country that
-            fosters an environment where kids deepen their love of baseball, build
-            lifelong friendships, and learn valuable life lessons and skills.`}
-          />
+          <div className="w-full md:w-1/3">
+            <div className="p-4 md:py-12 md:px-8">
+              <ValueCard
+                title={"Our Purpose"}
+                body={`Create lifelong memories for our kids, teach
+                valuable lessons through competitive baseball, and develop better
+                athletes that can go on to live active, healthy, and productive lives.`}
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/3">
+            <div className="p-4 md:py-12 md:px-8">
+              <ValueCard
+                title={"Our Mission"}
+                body={`Complement and partner with other youth
+                sports organizations in our area, offering additional competitive
+                opportunities for kids in the High Country while adopting the most
+                innovative practices in youth athlete development.`}
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/3">
+            <div className="p-4 md:py-12 md:px-8">
+              <ValueCard
+                title={"Our Vision"}
+                body={`Create a model youth sports organization in the High Country that
+                fosters an environment where kids deepen their love of baseball, build
+                lifelong friendships, and learn valuable life lessons and skills.`}
+              />
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -117,7 +124,7 @@ const IndexPage = () => {
         <div className="container mx-auto overflow-hidden">
           <div className="flex flex-wrap items-center justify-center -mx-4 mb-6">
             <div className="md-img mx-4">
-              <img src={Logo} />
+              <img src={Logo2} />
             </div>
             <div className="mx-4">
               <h2 className="text-white text-center">Our Values</h2>
@@ -203,18 +210,29 @@ const IndexPage = () => {
               <h2 className="text-white text-center">Our Sponsors</h2>
             </div>
           </div>
-          <h5 className="px-8 container-text m-center text-white text-center">
-            We would like to thank our dedicated sponsors for supporting our
-            program!
-            <br />
-            Platinum ($1000+), Silver ($500+), Bronze ($250+), Non-Disclosed
-          </h5>
+          <div className="px-8 container-text m-center text-white text-center">
+            <h5 >
+              We would like to thank our dedicated sponsors for supporting our
+              program!
+            </h5>
+          </div>
 
-          <div className="flex flex-wrap items-start -mx-3 justify-center mt-4">
-            <SponsorItem src={AppHealthcare} />
-            <SponsorItem src={Piedmont} />
-            <SponsorItem src={FarmBureau} />
-            <SponsorItem src={HighCountryDisaster} />
+          <div className="flex flex-wrap">
+
+            <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
+              <h3 className="text-center text-white">Home Run ($1000+)</h3>
+              <SponsorItem src={Piedmont} height={'hr'} />
+            </div>
+            <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
+              <h4 className="text-center text-white">Triple ($500+)</h4>
+              <SponsorItem src={AppHealthcare} height={'triple'} />
+            </div>
+            <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
+              <h5 className="text-center text-white font-bold">Double ($250+)</h5>
+              <SponsorItem height={'double'} src={FarmBureau} />
+              <SponsorItem height={'double'} src={HighCountryDisaster} />
+              <SponsorItem height={'double'} text={"Frank & Debbie Plottz"} />
+            </div>
           </div>
         </div>
       </div>
