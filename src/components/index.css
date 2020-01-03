@@ -108,6 +108,7 @@ a {
 .home-img-2 {
   background-image: url(../images/team.jpg);
   @apply picture-standard;
+  background-position-y: -64px;
 }
 .home-img-3 {
   background-image: url(../images/fun.jpg);
