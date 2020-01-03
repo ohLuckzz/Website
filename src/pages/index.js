@@ -43,10 +43,8 @@ const IndexPage = () => {
       {useMemo(() => {
         return (
           <div className="relative">
-            <Carousel infinite animationSpeed={2000} autoPlay={4000}>
+            <Carousel infinite animationSpeed={4000} autoPlay={6000}>
               <CarouselItem
-                top={`WELCOME TO THE`}
-                bottom={`HAVOC`}
                 image={`home-img-2`}
               />
               <CarouselItem
