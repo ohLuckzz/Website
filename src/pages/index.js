@@ -69,16 +69,13 @@ const IndexPage = () => {
       <div className="alternative-bg py-8 sm:py-12">
         <div className="container m-center overflow-hidden">
           <div className="flex flex-wrap items-center justify-center -mx-4 mb-6">
-            <div className="md-img mx-4">
-              <img src={Logo} />
-            </div>
             <div className="mx-4">
-              <h2 className="text-white text-center">Welcome to the HAVOC!</h2>
+              <h1 className="text-white text-center">Welcome to the HAVOC!</h1>
             </div>
           </div>
           <h5 className="px-8 container-text m-center text-white text-center">
             The High Country Havoc is a non-profit youth baseball organization
-            located in Boone, NC. We are an affiliate of the Big League Camp,
+            located in Boone, NC. We are an affiliate of the <a className="text-white" href="https://www.bigleaguecamp.com/" target="_blank" rel="noopener">Big League Camp</a>,
             enabling us to leverage the extensive knowledge provided by a
             network of college coaches, professional coaches, and Major League
             Baseball scouts.
