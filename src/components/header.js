@@ -32,8 +32,8 @@ const Header = ({ siteTitle }) => {
         <Link className="my-4 text-white mx-4" to="/approach/">
           Approach
         </Link>
-        <Link className="my-4 text-white mx-4" to="/teams/">
-          Teams
+        <Link className="my-4 text-white mx-4" to="/team/">
+          Team
         </Link>
         <Link className="my-4 text-white mx-4" to="/coaches/">
           Coaches
