@@ -26,19 +26,19 @@ const Header = ({ siteTitle }) => {
   const getLinks = () => {
     return (
       <>
-        <Link className="my-4 text-white mx-4" to="/schedule/">
+        <Link className="my-4 text-white mx-4 no-underline" to="/schedule/">
           Schedule
         </Link>
-        <Link className="my-4 text-white mx-4" to="/approach/">
+        <Link className="my-4 text-white mx-4 no-underline" to="/approach/">
           Approach
         </Link>
-        <Link className="my-4 text-white mx-4" to="/team/">
+        <Link className="my-4 text-white mx-4 no-underline" to="/team/">
           Team
         </Link>
-        <Link className="my-4 text-white mx-4" to="/coaches/">
+        <Link className="my-4 text-white mx-4 no-underline" to="/coaches/">
           Coaches
         </Link>
-        <Link className="my-4 text-white mx-4" to="/volunteers/">
+        <Link className="my-4 text-white mx-4 no-underline" to="/volunteers/">
           Volunteers
         </Link>
       </>
@@ -77,7 +77,7 @@ const Header = ({ siteTitle }) => {
     <header
       className={`${
         fixed ? `fixed` : `absolute`
-      } primary-bg shadow-md z-20 w-full`}
+        } primary-bg shadow-md z-20 w-full`}
     >
       <div className="relative items-center flex justify-between container py-4 px-10 m-center sm:px-0">
         <Link to="/" className="md-img">

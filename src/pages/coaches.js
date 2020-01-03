@@ -108,13 +108,13 @@ const Coaches = () => {
             specified areas, and simplify the message for kids.
           </p>
         </div>
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <SectionTitle title={`Costs for Spring/Summer 2020`} />
           <Table
             headers={createHeaders(payHeaders)}
             body={createRows(payment, "payment")}
           />
-        </div>
+        </div> */}
         <div className="mb-8">
           <SectionTitle title={`Corporate and Personal Donations`} />
           <p>

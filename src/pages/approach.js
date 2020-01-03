@@ -46,11 +46,7 @@ const Approach = () => {
         <div className="mb-8">
           <SectionTitle title={"Our Approach"} />
           <p>
-            Our approach is designed to…as best we can…balance a developmental
-            (i.e. include more kids to reduce issues of early selection,
-            encourage position rotation, equitable playing time) and competitive
-            (i.e. winning is important, best players play, etc.). To address
-            this tension there are three core elements to our approach.
+          Our approach is designed to balance our emphasis on development and competition by focusing on three core elements: Building the Havoc Team, Building the Tournament Roster, and following Playing Time Guidelines.
           </p>
         </div>
         <div className="w-full">
