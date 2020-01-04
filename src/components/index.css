@@ -165,10 +165,14 @@ button {
 .home-img-7 {
   background-image: url(../images/practice.png);
   @apply picture-standard;
+  background-size: contain;
+  @apply primary-bg;
 }
 .home-img-8 {
   background-image: url(../images/family.png);
   @apply picture-standard;
+  background-size: contain;
+  @apply primary-bg;
 }
 .effort-img {
   background-image: url(../images/effort.png);
@@ -320,5 +324,11 @@ button {
 
   .show-no-height-img-mobile {
     height: 150px;
+  }
+
+  .home-img-2 {
+    background-size: contain;
+    background-position-y: 50%;
+    @apply primary-bg;
   }
 }
