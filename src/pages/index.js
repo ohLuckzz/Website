@@ -221,7 +221,9 @@ const IndexPage = () => {
                 </div>
                 <h3 className="text-center text-white">Home Run ($1000+)</h3>
               </div>
-              <SponsorItem src={Piedmont} alt={"Piedmont"} height={'hr'} />
+              <a href="http://piedmontdentalassociates.com/" rel="noopener noreferrer" target="_blank">
+                <SponsorItem src={Piedmont} alt={"Piedmont"} height={'hr'} />
+              </a>
             </div>
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <div className="flex flex-wrap justify-center items-center">
@@ -230,7 +232,9 @@ const IndexPage = () => {
                 </div>
                 <h4 className="text-center text-white">Triple ($500+)</h4>
               </div>
-              <SponsorItem src={AppHealthcare} alt={"App Healthcare"} height={'triple'} />
+              <a href="https://apprhs.org/" rel="noopener noreferrer" target="_blank">
+                <SponsorItem src={AppHealthcare} alt={"App Healthcare"} height={'triple'} />
+              </a>
             </div>
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <div className="flex flex-wrap justify-center items-center">
@@ -239,8 +243,12 @@ const IndexPage = () => {
                 </div>
                 <h5 className="text-center text-white font-bold">Double ($250+)</h5>
               </div>
-              <SponsorItem height={'double'} alt={"Farm Bureau"} src={FarmBureau} />
-              <SponsorItem height={'double'} alt={"High Country Disaster"} src={HighCountryDisaster} />
+              <a href="https://www.ncfb.org/" rel="noopener noreferrer" target="_blank">
+                <SponsorItem height={'double'} alt={"Farm Bureau"} src={FarmBureau} />
+              </a>
+              <a href="https://www.facebook.com/highcountrydisasterpros/" rel="noopener noreferrer" target="_blank">
+                <SponsorItem height={'double'} alt={"High Country Disaster"} src={HighCountryDisaster} />
+              </a>
               <SponsorItem height={'double'} text={"Frank & Debbie Plotts"} />
             </div>
           </div>
