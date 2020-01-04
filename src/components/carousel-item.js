@@ -7,7 +7,7 @@ export default ({ top, bottom, image, ImageComponent }) => {
         <h5>
           <i>{top}</i>
         </h5>
-        <h1 className="antialiased shadow home-bottom-text">{bottom}</h1>
+        <h1 className="antialiased home-bottom-text">{bottom}</h1>
       </div>}
       <div className="home-img-overlay home-img-height" />
       {image && <div className={`w-full home-img-height ${image}`} />}

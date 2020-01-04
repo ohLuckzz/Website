@@ -170,6 +170,12 @@ button {
   background-image: url(../images/family.png);
   @apply picture-standard;
 }
+.effort-img {
+  background-image: url(../images/effort.png);
+  @apply picture-standard;
+  @apply primary-bg;
+  background-size: contain;
+}
 
 .home-card-1 {
   background-image: url(../images/big-league-1.jpg);

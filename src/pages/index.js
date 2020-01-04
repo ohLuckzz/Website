@@ -24,20 +24,26 @@ const IndexPage = () => {
       <SEO title="Home" />
       {useMemo(() => {
         return (
+          // animationSpeed={2000} autoPlay={6000}
           <div className="relative">
-            <Carousel infinite animationSpeed={2000} autoPlay={6000} >
+            <Carousel infinite  >
               <CarouselItem
                 image={`home-img-2`}
               />
               <CarouselItem
                 top={`WE FOCUS ON...`}
-                bottom={`FUN`}
-                image={`home-img-3`}
+                bottom={`TEAMWORK`}
+                image={`home-img-4`}
               />
               <CarouselItem
                 top={`WE FOCUS ON...`}
-                bottom={`TEAMWORK`}
-                image={`home-img-4`}
+                bottom={`EFFORT`}
+                image={`effort-img`}
+              />
+              <CarouselItem
+                top={`WE FOCUS ON...`}
+                bottom={`PRACTICE`}
+                image={`home-img-7`}
               />
               <CarouselItem
                 top={`WE FOCUS ON...`}
@@ -51,8 +57,8 @@ const IndexPage = () => {
               />
               <CarouselItem
                 top={`WE FOCUS ON...`}
-                bottom={`PRACTICE`}
-                image={`home-img-7`}
+                bottom={`FUN`}
+                image={`home-img-3`}
               />
               <CarouselItem
                 top={`WE FOCUS ON...`}
