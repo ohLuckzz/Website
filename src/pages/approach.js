@@ -48,24 +48,56 @@ const Approach = () => {
         <SectionContainer>
           <SectionTitle title={"Our Approach"} />
           <p>
-            Our approach is designed to balance our emphasis on development and competition by focusing on three core elements: Building the Havoc Team, Building the Tournament Roster, and following Playing Time Guidelines.
+            Our approach is designed to balance our emphasis on development and competition by focusing on four core elements: 1) Our Developmental philosophy, 2) Building the Havoc team 3) Process for Building Tournament Rosters, & 4) “In Game” Playing Time Guidelines.
           </p>
           <div className="flex flex-wrap -mx-4">
-            <div className="w-full sm:w-auto flex-grow p-4">
-              <button onClick={() => setActiveTab(1)} className={`w-full ${activeTab === 1 ? 'active-tab' : 'inactive-tab'}`}>Element 1 - Build Havoc Team</button>
+            <div className="w-full sm:w-auto p-4">
+              <button onClick={() => setActiveTab(1)} className={`w-full ${activeTab === 1 ? 'active-tab' : 'inactive-tab'}`}>Element 1 - Developmental Philosophy</button>
             </div>
-            <div className="w-full sm:w-auto flex-grow p-4">
-              <button onClick={() => setActiveTab(2)} className={`w-full ${activeTab === 2 ? 'active-tab' : 'inactive-tab'}`}>Element 2 - Build Tournament Roster</button>
+            <div className="w-full sm:w-auto p-4">
+              <button onClick={() => setActiveTab(2)} className={`w-full ${activeTab === 2 ? 'active-tab' : 'inactive-tab'}`}>Element 2 - Build Havoc Team</button>
             </div>
-            <div className="w-full sm:w-auto flex-grow p-4">
-              <button onClick={() => setActiveTab(3)} className={`w-full ${activeTab === 3 ? 'active-tab' : 'inactive-tab'}`}>Element 3 - “In Game” Playing Time Guidelines</button>
+            <div className="w-full sm:w-auto p-4">
+              <button onClick={() => setActiveTab(3)} className={`w-full ${activeTab === 3 ? 'active-tab' : 'inactive-tab'}`}>Element 3 - Build Tournament Roster</button>
+            </div>
+            <div className="w-full sm:w-auto p-4">
+              <button onClick={() => setActiveTab(4)} className={`w-full ${activeTab === 4 ? 'active-tab' : 'inactive-tab'}`}>Element 4 - Playing Time Guidelines</button>
             </div>
           </div>
         </SectionContainer>
         {activeTab === 1 && (
+          <SectionContainer>
+            <h3>Element 1: Developmental Philosophy</h3>
+            <p className="mb-4">Our developmental philosophy guides all elements of our program design. What does this mean? It means that our goals align to two core areas of player development: Character Development and Athlete Development. </p>
+            <p className="mb-4"><i>Character Development</i> is our first priority.  Our focus is on helping each player learn what it means to be a good teammate. In doing so, we want to help each child transition from a “me” centered world view to a “we” one. We are laser focused on developing great sportsmanship, where each player learns to win and lose with grace. We want our players to learn how to deal with frustration and struggle in productive ways, realizing it is an inevitable part of any journey worth taking. We emphasize effort and attitude always, and help each child connect the dots between disciplined practice and in game performance. How they spend their time today impacts what they can do tomorrow, we want the kids to develop that understanding and begin taking ownership of their development. It is these values and more that will equip each child with the tools they need to go on to live healthy and productive lives. That is our main goal.</p>
+            <p><i>Athlete Development</i> matters a lot too. We understand the chance that any kid plays competitive sports beyond high school is slim, but we start from the assumption that it is entirely possible if it happens to be a child’s dream. Our role is in helping kids discern their dreams, then helping them build the skills to chase them…whatever they may be. From an athlete development perspective, we focus on the following and more:</p>
+            <ul className="list-parent">
+              <li>
+                It must be fun! – Kids want to play youth sports because they are fun and they get to spend time with their friends. They quit when they stop having fun…period. We can’t ever lose sight of that.
+              </li>
+              <li>
+                It’s not all fun! – How we define fun is important. If children see going to the movies and playing mini-golf as synonymous with fun, then they might have trouble reconciling how running foul poll to foul poll to build endurance is fun. We help them understand how their can be different types of fun, and sometimes you need to endure some discomfort in the short-term to have fun in the long-term.
+              </li>
+              <li>
+                Practice design – We take practice design seriously. We are constantly learning and studying to get better. Seeing a kid standing around in practice is unacceptable. We seek to maximize reps through efficient design, small groups, and station rotation. Kids want to move, they want high energy, our practices should be that. Kids love games and they love to compete; our practices should have a lot of both.
+              </li>
+              <li>
+                Specialists – We are not professional coaches, but we constantly seek insight from baseball professionals to help us get better.
+              </li>
+              <li>
+                Cross train – We are strong advocates that kids should play a lot of sports up to…at the least…12 years old. They build more balanced bodies, more well-rounded athleticism, it keeps things interesting, and they interact with more kids. Our program should never stifle that, but always encourage it. In addition to building sport specific skills, we also emphasize developing in non-sport specific ways…speed, strength, and agility.
+              </li>
+              <li>
+                Cultivate an internal engine -  Let’s face it, from an athlete development perspective it’s hard to tell if any child has the physical tools to compete at high levels until around 13 or 14 years old. As a result, our objective is to help kids get to that point equipped with the following. First, we want them to have a solid foundation of fundamentals. Second, we want them to understand how to practice well and have built a strong work ethic. Third, we want them to be comfortable in competitive settings. Fourth, we want them to have a love for the game and desire to take it to the next level if they decide they want to.
+              </li>
+            </ul>
+            <p>Together, our focus on character development and athlete development helps define our developmental philosophy. In summary, we want to win today, but we are more interested in developing great people and athletes that can win throughout their lives. </p>
+          </SectionContainer>
+        )}
+        {activeTab === 2 && (
           <div className="w-full">
             <SectionContainer>
-              <h3>Element 1: Build Havoc Team</h3>
+              <h3>Element 2: Build Havoc Team</h3>
               <p>
                 Issues of roster size and playing time are some of the most
                 challenging elements of competitive youth sports. It’s a dilemma
@@ -114,9 +146,9 @@ const Approach = () => {
             </p>
             </SectionContainer>
           </div>)}
-        {activeTab === 2 && (
+        {activeTab === 3 && (
           <SectionContainer>
-            <h3>Element 2: Build Tournament Roster</h3>
+            <h3>Element 3: Build Tournament Roster</h3>
             <p>
               From our 16-person team we build each tournament roster following
               the process outlined below.
@@ -160,9 +192,9 @@ const Approach = () => {
             </div>
           </SectionContainer>
         )}
-        {activeTab === 3 && (
+        {activeTab === 4 && (
           <SectionContainer>
-            <h3>Element 3: “In Game” Playing Time Guidelines</h3>
+            <h3>Element 4: “In Game” Playing Time Guidelines</h3>
             <p>
               The following are additional guidelines we use to help address the
               tension between development and competition during competitive play:
