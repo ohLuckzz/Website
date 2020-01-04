@@ -11,11 +11,17 @@ import HomeRunIcon from '../images/home-run.svg'
 import TripleIcon from '../images/triple.svg'
 import DoubleIcon from '../images/double.svg'
 
+import Product1 from '../images/product-1.png'
+import Product2 from '../images/product-2.png'
+import Product3 from '../images/product-3.png'
+import Product4 from '../images/product-4.png'
+
 import ValuesBlock from "../components/values-block"
 import ValueCard from "../components/value-card"
 import CarouselItem from "../components/carousel-item"
 import SponsorItem from "../components/sponsor-item"
 import Layout from "../components/layout"
+import SectionTitle from "../components/section-title"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
@@ -212,6 +218,37 @@ const IndexPage = () => {
         </div>
       </div>
 
+      <div className="py-8 sm:py-12">
+        <div className="container mx-auto overflow-hidden flex flex-col">
+          <SectionTitle title={`Gear`} />
+          <div className="mb-8 px-8 -py-2 sm:px-0 flex flex-wrap items-center justify-between">
+            <div className="p-2 mx-auto">
+              <a rel="noopener noreferrer" target="_blank" className="text-white no-underline" href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805060?_k=kl84dd">
+                <img className="xl-img" src={Product1} alt={"High Country Havoc Hat"} />
+              </a>
+            </div>
+            <div className="p-2 mx-auto">
+              <a rel="noopener noreferrer" target="_blank" className="text-white no-underline" href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805299?_k=1b7h8t">
+                <img className="xl-img" src={Product2} alt={"High Country Havoc Woman Tank"} />
+              </a>
+            </div>
+            <div className="p-2 mx-auto">
+              <a rel="noopener noreferrer" target="_blank" className="text-white no-underline" href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805115?_k=k5t6ia">
+                <img className="xl-img" src={Product3} alt={"High Country Havoc Polo"} />
+              </a>
+            </div>
+            <div className="p-2 mx-auto">
+              <a rel="noopener noreferrer" target="_blank" className="text-white no-underline" href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805120?_k=eb4nef">
+                <img className="xl-img" src={Product4} alt={"High Country Havoc Ladies Bionic Jacket"} />
+              </a>
+            </div>
+          </div>
+          <button className="mx-auto primary-bg">
+            <a rel="noopener noreferrer" target="_blank" className="text-white no-underline" href="https://teamlocker.squadlocker.com/#/lockers/havoc-14?_k=bt8e8f">Shop Gear</a>
+          </button>
+        </div>
+      </div>
+
       <div className="alternative-bg py-8 sm:py-12">
         <div className="container mx-auto overflow-hidden">
           <div className="flex flex-col flex-wrap items-center justify-center -mx-4 mb-6">
@@ -232,7 +269,7 @@ const IndexPage = () => {
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <div className="flex flex-wrap justify-center items-center">
                 <div className="px-4">
-                  <img className="sm-img" src={HomeRunIcon} />
+                  <img className="sm-img" alt="Homerun Icon" src={HomeRunIcon} />
                 </div>
                 <h3 className="text-center text-white">Home Run ($1000+)</h3>
               </div>
@@ -243,7 +280,7 @@ const IndexPage = () => {
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <div className="flex flex-wrap justify-center items-center">
                 <div className="px-4">
-                  <img className="sm-img" src={TripleIcon} />
+                  <img className="sm-img" alt="Triple Icon" src={TripleIcon} />
                 </div>
                 <h4 className="text-center text-white">Triple ($500+)</h4>
               </div>
@@ -254,7 +291,7 @@ const IndexPage = () => {
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <div className="flex flex-wrap justify-center items-center">
                 <div className="px-4">
-                  <img className="sm-img" src={DoubleIcon} />
+                  <img className="sm-img" alt="Double Icon" src={DoubleIcon} />
                 </div>
                 <h5 className="text-center text-white font-bold">Double ($250+)</h5>
               </div>
