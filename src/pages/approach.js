@@ -49,7 +49,6 @@ const Approach = () => {
           <SectionTitle title={"Our Approach"} />
           <p>
             Our approach is designed to balance our emphasis on development and competition by focusing on three core elements: Building the Havoc Team, Building the Tournament Roster, and following Playing Time Guidelines.
-            1) Build Havoc Team 2) Build Tournament Roster, & 3) “In Game” Playing Time Guidelines
           </p>
           <div className="flex flex-wrap -mx-4">
             <div className="w-full sm:w-auto flex-grow p-4">
