@@ -53,13 +53,13 @@ const Approach = () => {
           </p>
           <div className="flex flex-wrap -mx-4">
             <div className="w-full sm:w-auto flex-grow p-4">
-              <button onClick={() => setActiveTab(1)} className={`w-full ${activeTab === 1 ? 'active-tab' : 'inactive-tab'}`}>Element 1</button>
+              <button onClick={() => setActiveTab(1)} className={`w-full ${activeTab === 1 ? 'active-tab' : 'inactive-tab'}`}>Element 1 - Build Havoc Team</button>
             </div>
             <div className="w-full sm:w-auto flex-grow p-4">
-              <button onClick={() => setActiveTab(2)} className={`w-full ${activeTab === 2 ? 'active-tab' : 'inactive-tab'}`}>Element 2</button>
+              <button onClick={() => setActiveTab(2)} className={`w-full ${activeTab === 2 ? 'active-tab' : 'inactive-tab'}`}>Element 2 - Build Tournament Roster</button>
             </div>
             <div className="w-full sm:w-auto flex-grow p-4">
-              <button onClick={() => setActiveTab(3)} className={`w-full ${activeTab === 3 ? 'active-tab' : 'inactive-tab'}`}>Element 3</button>
+              <button onClick={() => setActiveTab(3)} className={`w-full ${activeTab === 3 ? 'active-tab' : 'inactive-tab'}`}>Element 3 - “In Game” Playing Time Guidelines</button>
             </div>
           </div>
         </SectionContainer>

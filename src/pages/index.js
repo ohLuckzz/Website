@@ -41,7 +41,7 @@ const IndexPage = () => {
               />
               <CarouselItem
                 top={`WE FOCUS ON...`}
-                bottom={`COMPETING`}
+                bottom={`COMPETITION`}
                 image={`home-img-5`}
               />
               <CarouselItem
