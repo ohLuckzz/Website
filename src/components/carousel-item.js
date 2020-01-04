@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({ top, bottom, image }) => {
+export default ({ top, bottom, image, ImageComponent }) => {
   return (
     <div className="w-full relative">
       {top && <div className="absolute z-40 text-white home-text-container">
@@ -10,7 +10,8 @@ export default ({ top, bottom, image }) => {
         <h1 className="antialiased shadow home-bottom-text">{bottom}</h1>
       </div>}
       <div className="home-img-overlay home-img-height" />
-      <div className={`w-full home-img-height ${image}`} />
+      {image && <div className={`w-full home-img-height ${image}`} />}
+      {ImageComponent && <ImageComponent />}
     </div>
   )
 }

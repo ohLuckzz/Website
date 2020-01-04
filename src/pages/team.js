@@ -7,14 +7,10 @@ import { createHeaders, createRows } from "../utils/tableHelpers"
 
 const Teams = () => {
   const headers = [
-    "Player Name",
-    "Number",
+    "Player Name & Number",
     "Picture",
     "Favorite Players",
-    "Favorite Quote",
-    "Favorite Books",
-    "Baseball Goals for 2020",
-    "Life Goals for 2020",
+    "Baseball Goals",
   ]
 
   return (

@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import SectionContainer from "../components/section-container"
 import Table from "../components/table"
 import SectionTitle from "../components/section-title"
 import SEO from "../components/seo"
@@ -60,14 +61,14 @@ const Schedule = () => {
     <Layout>
       <SEO title="Schedule" />
       <div className="container mx-auto overflow-hidden mt-8">
-        <div className="mb-8">
+        <SectionContainer>
           <SectionTitle title={`2020 Pre-Season Practice Schedule`} />
           <Table
             headers={createHeaders(preSeasonPracticeHeaders)}
             body={createRows(preSeasonPracticeSchedule, "PreSeasonPractice")}
           />
-        </div>
-        <div className="mb-8">
+        </SectionContainer>
+        <SectionContainer>
           <SectionTitle title={`2020 Tentative Tournament Schedule*`} />
           <Table
             headers={createHeaders(tournamentHeaders)}
@@ -77,9 +78,9 @@ const Schedule = () => {
             *In addition to our tournament schedule, we will also aim to have
             6-8 single games with Lenoir Ravens, Equip, etc.
           </h5>
-        </div>
-        <div className="mb-8">
-          <SectionTitle title={`2020 Tentative Tournament Schedule*`} />
+        </SectionContainer>
+        <SectionContainer>
+          <SectionTitle title={`2020 Tentative Practice Schedule*`} />
           <Table
             headers={createHeaders(inSeasonPracticeHeaders)}
             body={createRows(inSeasonPracticeSchedule, "InSeason")}
@@ -88,7 +89,7 @@ const Schedule = () => {
             *New for 2020 will also be a structured at home program so athletes
             can practice on their own too.
           </h5>
-        </div>
+        </SectionContainer>
       </div>
     </Layout>
   )

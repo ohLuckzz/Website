@@ -26,6 +26,9 @@ const Header = ({ siteTitle }) => {
   const getLinks = () => {
     return (
       <>
+        <Link className="my-4 text-white mx-4 no-underline" to="/">
+          Home
+        </Link>
         <Link className="my-4 text-white mx-4 no-underline" to="/schedule/">
           Schedule
         </Link>
@@ -37,9 +40,6 @@ const Header = ({ siteTitle }) => {
         </Link>
         <Link className="my-4 text-white mx-4 no-underline" to="/coaches/">
           Coaches
-        </Link>
-        <Link className="my-4 text-white mx-4 no-underline" to="/volunteers/">
-          Volunteers
         </Link>
       </>
     )
@@ -80,8 +80,8 @@ const Header = ({ siteTitle }) => {
         } primary-bg shadow-md z-20 w-full`}
     >
       <div className="relative items-center flex justify-between container py-4 px-10 m-center sm:px-0">
-        <Link to="/" className="md-img">
-          <img src={Logo} />
+        <Link to="/" >
+          <img className="xmd-img object-cover" src={Logo} />
         </Link>
         {renderDesktop(getLinks())}
         {renderMobile(getLinks())}

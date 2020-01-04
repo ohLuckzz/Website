@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import { createHeaders, createRows } from "../utils/tableHelpers"
 
 const Coaches = () => {
-  const coachesHeaders = ["Name", "Role", "Practice Availability"]
+  const coachesHeaders = ["Name", "Role", "Background"]
   const payHeaders = ["Items", "Cost Per Player"]
   const donationHeaders = [
     "Total Donation Level",
@@ -99,14 +99,7 @@ const Coaches = () => {
             headers={createHeaders(coachesHeaders)}
             body={createRows(coaches, "coaches")}
           />
-          <p>
-            *Roles indicate the experts in particular areas and who is in charge
-            of 1) researching/designing/leading stations during practice, 2)
-            leading on field coaching for particular areas, and 3) in game
-            coaching. Our goals with this level of coordination are to leverage
-            our time capacity to greater degrees, develop greater expertise in
-            specified areas, and simplify the message for kids.
-          </p>
+
         </div>
         {/* <div className="mb-8">
           <SectionTitle title={`Costs for Spring/Summer 2020`} />
@@ -115,7 +108,7 @@ const Coaches = () => {
             body={createRows(payment, "payment")}
           />
         </div> */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <SectionTitle title={`Corporate and Personal Donations`} />
           <p>
             Last year we were fortunate to receive donations of nearly $3000
@@ -127,7 +120,7 @@ const Coaches = () => {
             headers={createHeaders(donationHeaders)}
             body={createRows(donations, "donations")}
           />
-        </div>
+        </div> */}
       </div>
     </Layout>
   )

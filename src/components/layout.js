@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         className="min-h-screen flex flex-col justify-between"
-        style={{ paddingTop: "114px" }}
+        style={{ paddingTop: "142px" }}
       >
         <main>{children}</main>
         <footer className="alternative-bg py-8">

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Source Sans Pro";
+}
+
 h1 {
   @apply text-5xl font-bold;
 }
@@ -37,6 +41,10 @@ a {
   font-weight: 700;
 }
 
+button {
+  @apply text-white font-bold py-2 px-4 rounded;
+}
+
 @keyframes slide-down {
   0% {
     opacity: 0;
@@ -53,11 +61,11 @@ a {
 }
 
 .secondary-bg {
-  background-color: #72b1e4;
+  background-color: #83cdfd;
 }
 
 .alternative-bg {
-  background-color: #c5292d;
+  background-color: #e41f24;
 }
 
 .primary-color {
@@ -65,11 +73,25 @@ a {
 }
 
 .secondary-color {
-  color: #72b1e4;
+  color: #83cdfd;
 }
 
 .alternative-color {
-  color: #c5292d;
+  color: #e41f24;
+}
+
+.active-tab {
+  @apply primary-bg;
+  border: 2px solid #12459b;
+}
+
+.inactive-tab {
+  @apply primary-color;
+  border: 2px solid #12459b;
+}
+
+.inactive-tab:hover {
+  @apply primary-bg text-white;
 }
 
 .primary-border-bottom {
@@ -88,6 +110,13 @@ a {
 .md-img {
   width: 90px;
   min-width: 90px;
+  height: 90px;
+}
+
+.xmd-img {
+  width: 110px;
+  min-width: 110px;
+  height: 110px;
 }
 
 .lg-img {
@@ -114,10 +143,10 @@ a {
 .home-img-2 {
   background-image: url(../images/team.jpg);
   @apply picture-standard;
-  background-position-y: -64px;
+  background-position-y: 0%;
 }
 .home-img-3 {
-  background-image: url(../images/fun.jpg);
+  background-image: url(../images/fun.png);
   @apply picture-standard;
 }
 .home-img-4 {
@@ -128,17 +157,29 @@ a {
   background-image: url(../images/competition.jpg);
   @apply picture-standard;
 }
-
-.home-card-1 {
+.home-img-6 {
   background-image: url(../images/friendship.jpg);
   @apply picture-standard;
 }
+.home-img-7 {
+  background-image: url(../images/practice.png);
+  @apply picture-standard;
+}
+.home-img-8 {
+  background-image: url(../images/family.png);
+  @apply picture-standard;
+}
+
+.home-card-1 {
+  background-image: url(../images/big-league-1.jpg);
+  @apply picture-standard;
+}
 .home-card-2 {
-  background-image: url(../images/desire.jpg);
+  background-image: url(../images/big-league-2.jpg);
   @apply picture-standard;
 }
 .home-card-3 {
-  background-image: url(../images/training.jpg);
+  background-image: url(../images/big-league-3.jpg);
   @apply picture-standard;
 }
 
@@ -150,7 +191,7 @@ a {
 }
 
 .home-img-height {
-  height: 75vh;
+  height: 65vh;
 }
 
 .home-img-text-container {
@@ -162,8 +203,13 @@ a {
 
 .home-text-container {
   line-height: 0.75;
-  top: 10px;
+  bottom: 0px;
+  top: 0;
   left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .home-bottom-text {
@@ -201,7 +247,7 @@ a {
 
 .header-nav {
   left: 0;
-  top: 113px;
+  top: 142px;
   flex-direction: column;
 }
 
@@ -218,19 +264,23 @@ a {
   height: 100%;
 }
 
+.list-parent {
+  padding: 20px 0 0px 30px;
+}
+
+.list-parent > li {
+  @apply pb-2;
+}
+
 @media (max-width: 1150px) {
-  .home-text-container {
-    top: 10px;
-    left: 50px;
-  }
   .home-bottom-text {
-    font-size: 9rem;
+    font-size: 6rem;
   }
 }
 
 @media (max-width: 1024px) {
   .home-img-height {
-    height: 50vh;
+    height: 35vh;
   }
 }
 
@@ -244,13 +294,15 @@ a {
   }
 
   .home-text-container {
-    bottom: 0px;
-    top: 0;
     left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+  }
+
+  .list-parent {
+    padding: 20px 0 0px 20px;
+  }
+
+  .list-parent > li {
+    @apply pb-4;
   }
 }
 

@@ -3,18 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ header, body, icon }) => {
   return (
-    <>
+    <div className="bg-white p-4 rounded shadow">
       <div className="flex items-end -mx-2 mb-2">
         <div className="px-2 text-2xl leading-none">
-          <FontAwesomeIcon color={"white"} fixedWidth icon={icon} />
+          <FontAwesomeIcon color={"red"} fixedWidth icon={icon} />
         </div>
         <div className="px-2">
-          <h4 className="leading-none text-white">{header}</h4>
+          <h4 className="leading-none alternative-color">{header}</h4>
         </div>
       </div>
       <div style={{ marginLeft: "47px" }}>
-        <p className="text-white text-gray-200">{body}</p>
+        <p className="text-black">{body}</p>
       </div>
-    </>
+    </div>
   )
 }

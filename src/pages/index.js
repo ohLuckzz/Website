@@ -1,13 +1,11 @@
-import React, { useEffect, useLayoutEffect, useState, useMemo } from "react"
+import React, { useMemo } from "react"
 import Carousel from "@brainhubeu/react-carousel"
 import Gallery from "react-photo-gallery"
 import "@brainhubeu/react-carousel/lib/style.css"
 
-import Logo from "../images/logo.png"
-import Logo2 from "../images/logo_2.png"
-import Teamwork from "../images/teamwork.jpg"
-import Desire from "../images/desire.jpg"
-import Fun from "../images/fun.jpg"
+import Teamwork from "../images/big-league-1.jpg"
+import Desire from "../images/big-league-2.jpg"
+import Fun from "../images/big-league-3.jpg"
 import AppHealthcare from "../images/sponsors/app-healthcare.png"
 import Piedmont from "../images/sponsors/piedmont.png"
 import FarmBureau from "../images/sponsors/farm-bureau.png"
@@ -28,12 +26,12 @@ const IndexPage = () => {
     },
     {
       src: Desire,
-      width: 1,
+      width: 2,
       height: 1,
     },
     {
       src: Fun,
-      width: 1,
+      width: 2,
       height: 1,
     },
   ]
@@ -44,7 +42,8 @@ const IndexPage = () => {
       {useMemo(() => {
         return (
           <div className="relative">
-            <Carousel infinite animationSpeed={4000} autoPlay={6000}>
+            {/* animationSpeed={2000} autoPlay={6000} */}
+            <Carousel infinite >
               <CarouselItem
                 image={`home-img-2`}
               />
@@ -63,11 +62,26 @@ const IndexPage = () => {
                 bottom={`COMPETING`}
                 image={`home-img-5`}
               />
+              <CarouselItem
+                top={`WE FOCUS ON...`}
+                bottom={`FRIENDSHIP`}
+                image={`home-img-6`}
+              />
+              <CarouselItem
+                top={`WE FOCUS ON...`}
+                bottom={`PRACTICE`}
+                image={`home-img-7`}
+              />
+              <CarouselItem
+                top={`WE FOCUS ON...`}
+                bottom={`FAMILY`}
+                image={`home-img-8`}
+              />
             </Carousel>
           </div>
         )
       }, [])}
-      <div className="alternative-bg py-8 sm:py-12">
+      <div className="alternative-bg py-8">
         <div className="container m-center overflow-hidden">
           <div className="flex flex-wrap items-center justify-center -mx-4 mb-6">
             <div className="mx-4">
@@ -123,15 +137,12 @@ const IndexPage = () => {
       <div className="secondary-bg py-8 sm:py-12">
         <div className="container mx-auto overflow-hidden">
           <div className="flex flex-wrap items-center justify-center -mx-4 mb-6">
-            <div className="md-img mx-4">
-              <img src={Logo2} />
-            </div>
             <div className="mx-4">
               <h2 className="text-white text-center">Our Values</h2>
             </div>
           </div>
-          <div className={`flex flex-wrap -mx-6 pb-8`}>
-            <div className="w-full sm:w-1/2">
+          <div className={`flex flex-wrap -mx-6`}>
+            <div className="w-full md:w-1/2 -my-10 sm:-my-6">
               <ValuesBlock
                 values={{
                   header: "Community Centered",
@@ -193,8 +204,12 @@ const IndexPage = () => {
                 image={`community-img`}
               />
             </div>
-            <div className="hidden sm:block sm:w-1/2">
-              <Gallery photos={photos} />
+            <div className="hidden md:block md:w-1/2">
+              <div className="flex flex-col justify-between" style={{ height: '100%' }}>
+                <div className="home-card-1" style={{ height: '31%' }} />
+                <div className="home-card-2" style={{ height: '31%' }} />
+                <div className="home-card-3" style={{ height: '31%' }} />
+              </div>
             </div>
           </div>
         </div>
@@ -202,20 +217,18 @@ const IndexPage = () => {
 
       <div className="alternative-bg py-8 sm:py-12">
         <div className="container mx-auto overflow-hidden">
-          <div className="flex flex-wrap items-center justify-center -mx-4 mb-6">
-            <div className="md-img mx-4">
-              <img src={Logo} />
-            </div>
+          <div className="flex flex-col flex-wrap items-center justify-center -mx-4 mb-6">
             <div className="mx-4">
               <h2 className="text-white text-center">Our Sponsors</h2>
             </div>
-          </div>
-          <div className="px-8 container-text m-center text-white text-center">
-            <h5 >
-              We would like to thank our dedicated sponsors for supporting our
-              program!
+            <div className="px-8 container-text m-center text-white text-center">
+              <h5 >
+                We would like to thank our dedicated sponsors for supporting our
+                program!
             </h5>
+            </div>
           </div>
+
 
           <div className="flex flex-wrap">
 
@@ -231,7 +244,7 @@ const IndexPage = () => {
               <h5 className="text-center text-white font-bold">Double ($250+)</h5>
               <SponsorItem height={'double'} src={FarmBureau} />
               <SponsorItem height={'double'} src={HighCountryDisaster} />
-              <SponsorItem height={'double'} text={"Frank & Debbie Plottz"} />
+              <SponsorItem height={'double'} text={"Frank & Debbie Plotts"} />
             </div>
           </div>
         </div>
