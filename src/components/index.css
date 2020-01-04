@@ -105,6 +105,7 @@ button {
 .sm-img {
   width: 45px;
   min-width: 45px;
+  height: 45px;
 }
 
 .md-img {

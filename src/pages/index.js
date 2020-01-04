@@ -6,6 +6,11 @@ import AppHealthcare from "../images/sponsors/app-healthcare.png"
 import Piedmont from "../images/sponsors/piedmont.png"
 import FarmBureau from "../images/sponsors/farm-bureau.png"
 import HighCountryDisaster from "../images/sponsors/hcdisaster.png"
+
+import HomeRunIcon from '../images/home-run.svg'
+import TripleIcon from '../images/triple.svg'
+import DoubleIcon from '../images/double.svg'
+
 import ValuesBlock from "../components/values-block"
 import ValueCard from "../components/value-card"
 import CarouselItem from "../components/carousel-item"
@@ -210,15 +215,30 @@ const IndexPage = () => {
           <div className="flex flex-wrap">
 
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
-              <h3 className="text-center text-white">Home Run ($1000+)</h3>
+              <div className="flex flex-wrap justify-center items-center">
+                <div className="px-4">
+                  <img className="sm-img" src={HomeRunIcon} />
+                </div>
+                <h3 className="text-center text-white">Home Run ($1000+)</h3>
+              </div>
               <SponsorItem src={Piedmont} alt={"Piedmont"} height={'hr'} />
             </div>
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
-              <h4 className="text-center text-white">Triple ($500+)</h4>
+              <div className="flex flex-wrap justify-center items-center">
+                <div className="px-4">
+                  <img className="sm-img" src={TripleIcon} />
+                </div>
+                <h4 className="text-center text-white">Triple ($500+)</h4>
+              </div>
               <SponsorItem src={AppHealthcare} alt={"App Healthcare"} height={'triple'} />
             </div>
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
-              <h5 className="text-center text-white font-bold">Double ($250+)</h5>
+              <div className="flex flex-wrap justify-center items-center">
+                <div className="px-4">
+                  <img className="sm-img" src={DoubleIcon} />
+                </div>
+                <h5 className="text-center text-white font-bold">Double ($250+)</h5>
+              </div>
               <SponsorItem height={'double'} alt={"Farm Bureau"} src={FarmBureau} />
               <SponsorItem height={'double'} alt={"High Country Disaster"} src={HighCountryDisaster} />
               <SponsorItem height={'double'} text={"Frank & Debbie Plotts"} />
