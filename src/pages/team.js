@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Table from "../components/table"
 
-import { createHeaders, createRows } from "../utils/tableHelpers"
+import { createHeaders } from "../utils/tableHelpers"
 
 const Teams = () => {
   const headers = [

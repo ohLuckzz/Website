@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({ src, height, text }) => {
+export default ({ src, height, text, alt }) => {
 
   const heightMap = {
     'hr': '100px',
@@ -16,7 +16,7 @@ export default ({ src, height, text }) => {
       className={`bg-white rounded ${img} px-2 py-3 flex m-3`}
       style={{ height: _height }}
     >
-      {src && <img className="object-contain" src={src} />}
+      {src && <img alt={alt} className="object-contain" src={src} />}
       {text && <p className="text-center font-bold">{text}</p>}
     </div>
   )

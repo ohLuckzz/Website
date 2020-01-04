@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1",
-    "react-photo-gallery": "^8.0.0",
     "tailwindcss": "^1.1.4"
   },
   "keywords": [

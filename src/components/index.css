@@ -143,7 +143,7 @@ button {
 .home-img-2 {
   background-image: url(../images/team.jpg);
   @apply picture-standard;
-  background-position-y: 0%;
+  background-position-y: 80%;
 }
 .home-img-3 {
   background-image: url(../images/fun.png);

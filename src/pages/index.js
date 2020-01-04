@@ -1,11 +1,7 @@
 import React, { useMemo } from "react"
 import Carousel from "@brainhubeu/react-carousel"
-import Gallery from "react-photo-gallery"
 import "@brainhubeu/react-carousel/lib/style.css"
 
-import Teamwork from "../images/big-league-1.jpg"
-import Desire from "../images/big-league-2.jpg"
-import Fun from "../images/big-league-3.jpg"
 import AppHealthcare from "../images/sponsors/app-healthcare.png"
 import Piedmont from "../images/sponsors/piedmont.png"
 import FarmBureau from "../images/sponsors/farm-bureau.png"
@@ -18,32 +14,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
-  const photos = [
-    {
-      src: Teamwork,
-      width: 2,
-      height: 1,
-    },
-    {
-      src: Desire,
-      width: 2,
-      height: 1,
-    },
-    {
-      src: Fun,
-      width: 2,
-      height: 1,
-    },
-  ]
-
   return (
     <Layout>
       <SEO title="Home" />
       {useMemo(() => {
         return (
           <div className="relative">
-            {/* animationSpeed={2000} autoPlay={6000} */}
-            <Carousel infinite >
+            <Carousel infinite animationSpeed={2000} autoPlay={6000} >
               <CarouselItem
                 image={`home-img-2`}
               />
@@ -90,7 +67,7 @@ const IndexPage = () => {
           </div>
           <h5 className="px-8 container-text m-center text-white text-center">
             The High Country Havoc is a non-profit youth baseball organization
-            located in Boone, NC. We are an affiliate of the <a className="text-white" href="https://www.bigleaguecamp.com/" target="_blank" rel="noopener">Big League Camp</a>,
+            located in Boone, NC. We are an affiliate of the <a className="text-white" href="https://www.bigleaguecamp.com/" target="_blank" rel="noopener noreferrer">Big League Camp</a>,
             enabling us to leverage the extensive knowledge provided by a
             network of college coaches, professional coaches, and Major League
             Baseball scouts.
@@ -160,8 +137,8 @@ const IndexPage = () => {
                   header: "Continuous Learning",
                   icon: "chalkboard-teacher",
                   body: <span>We stay connected to the most innovative thinking
-          in youth sports through organizations like <a href="https://www.aspeninstitute.org/tag/youth-sports/" target="_blank" rel="noopener">The Aspen Institute</a>, <a href="https://sportdev.org/USAB/Education/Long_Term_Athlete_Development_Plan/USAB/Education/LTAD.aspx?hkey=0b2b2c04-3ed0-43b3-a12d-0c6b73ab7efd" rel="noopener" target="_blank">USA
-                    Baseball</a>, and <a href="https://changingthegameproject.com/about/" target="_blank" rel="noopener">Changing the Game Project</a>. Our affiliation with <a href="https://www.bigleaguecamp.com/" rel="noopener" target="_blank">Big League
+          in youth sports through organizations like <a href="https://www.aspeninstitute.org/tag/youth-sports/" target="_blank" rel="noopener noreferrer">The Aspen Institute</a>, <a href="https://sportdev.org/USAB/Education/Long_Term_Athlete_Development_Plan/USAB/Education/LTAD.aspx?hkey=0b2b2c04-3ed0-43b3-a12d-0c6b73ab7efd" rel="noopener noreferrer" target="_blank">USA
+                    Baseball</a>, and <a href="https://changingthegameproject.com/about/" target="_blank" rel="noopener noreferrer">Changing the Game Project</a>. Our affiliation with <a href="https://www.bigleaguecamp.com/" rel="noopener noreferrer" target="_blank">Big League
                     Camp</a> affords us a constant source of the most innovative thinking in
           youth baseball player development.</span>,
                 }}
@@ -186,9 +163,9 @@ const IndexPage = () => {
                   body: <span>We strive to be competitive today, but we focus on
             growing each child’s love for the game, building a solid foundation of
             fundamentals, and helping them become better people and athletes. We are
-            diligent about issues of arm care and are guided by USA Baseball’s <a rel="noopener" target="_blank" href="https://www.mlb.com/pitch-smart/pitching-guidelines">Pitch
+            diligent about issues of arm care and are guided by USA Baseball’s <a rel="noopener noreferrer" target="_blank" href="https://www.mlb.com/pitch-smart/pitching-guidelines">Pitch
             Smart Framework</a>. We emphasize practice over competition while seeking
-            insight from <a href="https://sportdev.org/images/USAB/Education/3.%20LTAD%20Periodization%20and%20Competition.png" target="_blank" rel="noopener">USA Baseball Guidelines</a>.</span>,
+            insight from <a href="https://sportdev.org/images/USAB/Education/3.%20LTAD%20Periodization%20and%20Competition.png" target="_blank" rel="noopener noreferrer">USA Baseball Guidelines</a>.</span>,
                 }}
                 image={`community-img`}
               />
@@ -234,16 +211,16 @@ const IndexPage = () => {
 
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <h3 className="text-center text-white">Home Run ($1000+)</h3>
-              <SponsorItem src={Piedmont} height={'hr'} />
+              <SponsorItem src={Piedmont} alt={"Piedmont"} height={'hr'} />
             </div>
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <h4 className="text-center text-white">Triple ($500+)</h4>
-              <SponsorItem src={AppHealthcare} height={'triple'} />
+              <SponsorItem src={AppHealthcare} alt={"App Healthcare"} height={'triple'} />
             </div>
             <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
               <h5 className="text-center text-white font-bold">Double ($250+)</h5>
-              <SponsorItem height={'double'} src={FarmBureau} />
-              <SponsorItem height={'double'} src={HighCountryDisaster} />
+              <SponsorItem height={'double'} alt={"Farm Bureau"} src={FarmBureau} />
+              <SponsorItem height={'double'} alt={"High Country Disaster"} src={HighCountryDisaster} />
               <SponsorItem height={'double'} text={"Frank & Debbie Plotts"} />
             </div>
           </div>

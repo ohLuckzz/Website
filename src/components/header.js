@@ -53,7 +53,6 @@ const Header = ({ siteTitle }) => {
     return (
       <>
         <div
-          onClick={() => setMenuOpen(!menuOpen)}
           className="block sm:hidden -mx-4 cursor-pointer"
         >
           <FontAwesomeIcon
@@ -61,6 +60,8 @@ const Header = ({ siteTitle }) => {
             size={"2x"}
             className="mx-4"
             icon={"bars"}
+            onClick={() => setMenuOpen(!menuOpen)}
+            onKeyDown={() => setMenuOpen(!menuOpen)}
           />
         </div>
         <div
@@ -81,7 +82,7 @@ const Header = ({ siteTitle }) => {
     >
       <div className="relative items-center flex justify-between container py-4 px-10 m-center sm:px-0">
         <Link to="/" >
-          <img className="xmd-img object-cover" src={Logo} />
+          <img alt={"High Country Havoc Logo"} className="xmd-img object-cover" src={Logo} />
         </Link>
         {renderDesktop(getLinks())}
         {renderMobile(getLinks())}
