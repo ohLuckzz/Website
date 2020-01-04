@@ -3,7 +3,7 @@ import IconBlock from "./icon-block"
 
 export default ({ values, image }) => {
   return (
-    <div className="p-10 sm:p-6">
+    <div className="px-10 py-4 sm:p-6">
       <IconBlock header={values.header} icon={values.icon} body={values.body} />
     </div>
   )

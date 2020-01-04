@@ -124,7 +124,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className={`flex flex-wrap -mx-6`}>
-            <div className="w-full md:w-1/2 -my-10 sm:-my-6">
+            <div className="w-full md:w-1/2 -my-4 sm:-my-6">
               <ValuesBlock
                 values={{
                   header: "Community Centered",
