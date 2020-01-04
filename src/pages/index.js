@@ -178,7 +178,7 @@ const IndexPage = () => {
                 values={{
                   header: "Collaborative Approach",
                   icon: "people-carry",
-                  body: `Collaborative Approach – We are a network of parents and professionals who
+                  body: `We are a network of parents and professionals who
             care deeply about youth sports and these kids. We tap into our distinct
             knowledge and experiences to create collective insight that helps us build
             great experiences for our kids. It’s truly a team effort.`,
@@ -188,9 +188,18 @@ const IndexPage = () => {
             </div>
             <div className="hidden md:block md:w-1/2">
               <div className="flex flex-col justify-between" style={{ height: '100%' }}>
-                <div className="home-card-1" style={{ height: '31%' }} />
-                <div className="home-card-2" style={{ height: '31%' }} />
-                <div className="home-card-3" style={{ height: '31%' }} />
+                <div className="flex flex-col" style={{ height: '31%' }}>
+                  <div className="home-card-1" style={{ height: '100%' }} />
+                  <i className="text-white">Big League Camp</i>
+                </div>
+                <div className="flex flex-col" style={{ height: '31%' }}>
+                  <div className="home-card-2" style={{ height: '100%' }} />
+                  <i className="text-white">Big League Camp</i>
+                </div>
+                <div className="flex flex-col" style={{ height: '31%' }}>
+                  <div className="home-card-3" style={{ height: '100%' }} />
+                  <i className="text-white">Big League Camp</i>
+                </div>
               </div>
             </div>
           </div>
