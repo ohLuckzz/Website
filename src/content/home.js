@@ -5,7 +5,7 @@ export default {
   siteTitleBody: (
     <span>
       The High Country Havoc is a non-profit youth baseball organization located
-      in Boone, NC. We are an affiliate of the
+      in Boone, NC. We are an affiliate of the{" "}
       <a
         className="text-white"
         href="https://www.bigleaguecamp.com/"
@@ -54,7 +54,7 @@ export default {
     body: (
       <span>
         We stay connected to the most innovative thinking in youth sports
-        through organizations like
+        through organizations like{" "}
         <a
           href="https://www.aspeninstitute.org/tag/youth-sports/"
           target="_blank"
@@ -62,7 +62,7 @@ export default {
         >
           The Aspen Institute
         </a>
-        ,
+        ,{" "}
         <a
           href="https://sportdev.org/USAB/Education/Long_Term_Athlete_Development_Plan/USAB/Education/LTAD.aspx?hkey=0b2b2c04-3ed0-43b3-a12d-0c6b73ab7efd"
           rel="noopener noreferrer"
@@ -70,7 +70,7 @@ export default {
         >
           USA Baseball
         </a>
-        , and
+        , and{" "}
         <a
           href="https://changingthegameproject.com/about/"
           target="_blank"
@@ -78,14 +78,14 @@ export default {
         >
           Changing the Game Project
         </a>
-        . Our affiliation with
+        . Our affiliation with{" "}
         <a
           href="https://www.bigleaguecamp.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Big League Camp
-        </a>
+        </a>{" "}
         affords us a constant source of the most innovative thinking in youth
         baseball player development.
       </span>
@@ -108,7 +108,7 @@ export default {
         We strive to be competitive today, but we focus on growing each child’s
         love for the game, building a solid foundation of fundamentals, and
         helping them become better people and athletes. We are diligent about
-        issues of arm care and are guided by USA Baseball’s
+        issues of arm care and are guided by USA Baseball’s{" "}
         <a
           rel="noopener noreferrer"
           target="_blank"
@@ -116,7 +116,7 @@ export default {
         >
           Pitch Smart Framework
         </a>
-        . We emphasize practice over competition while seeking insight from
+        . We emphasize practice over competition while seeking insight from{" "}
         <a
           href="https://sportdev.org/images/USAB/Education/3.%20LTAD%20Periodization%20and%20Competition.png"
           target="_blank"

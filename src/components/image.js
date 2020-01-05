@@ -26,9 +26,14 @@ const Image = () => {
     }
   `)
 
-  console.log('data :', data);
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div className="home-img-height" style={{ maxHeight: "100%" }}>
+      <Img
+        style={{ maxHeight: "100%", height: "100%" }}
+        fluid={data.placeholderImage.childImageSharp.fluid}
+      />
+    </div>
+  )
 }
 
 export default Image

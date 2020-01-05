@@ -171,20 +171,21 @@ button {
 .home-img-7 {
   background-image: url(../images/practice.png);
   @apply picture-standard;
-  background-size: contain;
-  @apply primary-bg;
+  background-position-y: 0%;
 }
 .home-img-8 {
   background-image: url(../images/family.png);
   @apply picture-standard;
-  background-size: contain;
-  @apply primary-bg;
+  background-position-y: 0%;
 }
 .effort-img {
   background-image: url(../images/effort.png);
   @apply picture-standard;
-  @apply primary-bg;
-  background-size: contain;
+  background-position-y: 0%;
+}
+.test-img {
+  background-image: url(../images/test.jpg);
+  @apply picture-standard;
 }
 
 .home-card-1 {
@@ -328,6 +329,10 @@ button {
     @apply text-3xl;
   }
 
+  .home-img-height {
+    height: 185px;
+  }
+
   .show-no-height-img-mobile {
     height: 150px;
   }
@@ -336,5 +341,13 @@ button {
     background-size: contain;
     background-position-y: 50%;
     @apply primary-bg;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:xl-img {
+    width: 210px;
+    height: 210px;
+    min-width: 210px;
   }
 }

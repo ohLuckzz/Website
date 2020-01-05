@@ -6,6 +6,7 @@ import AppHealthcare from "../images/sponsors/app-healthcare.png"
 import Piedmont from "../images/sponsors/piedmont.png"
 import FarmBureau from "../images/sponsors/farm-bureau.png"
 import HighCountryDisaster from "../images/sponsors/hcdisaster.png"
+import Skyline from "../images/sponsors/skyline.jpg"
 
 import HomeRunIcon from "../images/home-run.svg"
 import TripleIcon from "../images/triple.svg"
@@ -24,6 +25,7 @@ import SponsorItem from "../components/sponsor-item"
 import Layout from "../components/layout"
 import SectionTitle from "../components/section-title"
 import SEO from "../components/seo"
+import Image from "../components/image"
 
 import Data from "../content/home"
 
@@ -34,8 +36,9 @@ const IndexPage = () => {
       {useMemo(() => {
         return (
           <div className="relative">
-            <Carousel infinite animationSpeed={2000} autoPlay={6000}>
-              <CarouselItem image={`home-img-2`} />
+            {/* animationSpeed={2000} autoPlay={6000} */}
+            <Carousel infinite>
+              <CarouselItem ImageComponent={Image} />
               <CarouselItem
                 top={`WE FOCUS ON...`}
                 bottom={`TEAMWORK`}
@@ -107,7 +110,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className="secondary-bg py-8 sm:py-12">
+      <div className="secondary-bg py-8 px-8 sm:py-12 xl:px-0">
         <div className="container mx-auto overflow-hidden">
           <div className="flex flex-wrap items-center justify-center -mx-4 mb-6">
             <div className="mx-4">
@@ -187,7 +190,7 @@ const IndexPage = () => {
                 href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805060?_k=kl84dd"
               >
                 <img
-                  className="xl-img"
+                  className="md-img sm:xl-img object-contain"
                   src={Product1}
                   alt={"High Country Havoc Hat"}
                 />
@@ -201,7 +204,7 @@ const IndexPage = () => {
                 href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805299?_k=1b7h8t"
               >
                 <img
-                  className="xl-img"
+                  className="md-img sm:xl-img object-contain"
                   src={Product2}
                   alt={"High Country Havoc Woman Tank"}
                 />
@@ -215,7 +218,7 @@ const IndexPage = () => {
                 href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805115?_k=k5t6ia"
               >
                 <img
-                  className="xl-img"
+                  className="md-img sm:xl-img object-contain"
                   src={Product3}
                   alt={"High Country Havoc Polo"}
                 />
@@ -229,7 +232,7 @@ const IndexPage = () => {
                 href="https://teamlocker.squadlocker.com/#/lockers/havoc-14/styles/15805120?_k=eb4nef"
               >
                 <img
-                  className="xl-img"
+                  className="md-img sm:xl-img object-contain"
                   src={Product4}
                   alt={"High Country Havoc Ladies Bionic Jacket"}
                 />
@@ -331,6 +334,17 @@ const IndexPage = () => {
                   height={"double"}
                   alt={"High Country Disaster"}
                   src={HighCountryDisaster}
+                />
+              </a>
+              <a
+                href="https://www.skybest.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <SponsorItem
+                  height={"double"}
+                  alt={"Skyline Skybest"}
+                  src={Skyline}
                 />
               </a>
               <SponsorItem height={"double"} text={"Frank & Debbie Plotts"} />
