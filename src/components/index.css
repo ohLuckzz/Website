@@ -183,10 +183,6 @@ button {
   @apply picture-standard;
   background-position-y: 0%;
 }
-.test-img {
-  background-image: url(../images/test.jpg);
-  @apply picture-standard;
-}
 
 .home-card-1 {
   background-image: url(../images/big-league-1.jpg);
