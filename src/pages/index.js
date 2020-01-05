@@ -33,8 +33,8 @@ const IndexPage = () => {
       <SEO title="Home" />
       {useMemo(() => {
         return (
-          <div className="relative" animationSpeed={2000} autoPlay={6000}>
-            <Carousel infinite>
+          <div className="relative">
+            <Carousel infinite animationSpeed={2000} autoPlay={6000}>
               <CarouselItem image={`home-img-2`} />
               <CarouselItem
                 top={`WE FOCUS ON...`}
