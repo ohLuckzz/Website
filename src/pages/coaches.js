@@ -4,6 +4,9 @@ import Table from "../components/table"
 import SectionTitle from "../components/section-title"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import Data from "../content/coaches"
+
 import { createHeaders, createRows } from "../utils/tableHelpers"
 
 const Coaches = () => {
@@ -13,31 +16,7 @@ const Coaches = () => {
   //   "Total Donation Level",
   //   "Final Total Individual Costs + Tourn. Fees",
   // ]
-  const coaches = [
-    {
-      Name: "Mark Lewis",
-      "Roles and Responsibilities*":
-        "Scheduling, practice planning, communication, and primary pitching",
-    },
-    {
-      Name: "Allie Woods",
-      "Roles and Responsibilities*":
-        "Outfield, base running, third base coach ",
-    },
-    {
-      Name: "Jim Piper",
-      "Roles and Responsibilities*": "Infield, first base coach, statistician",
-    },
-    {
-      Name: "Brian Tester",
-      "Roles and Responsibilities*":
-        "Catchers, primary hitting, secondary pitching",
-    },
-    {
-      Name: "Ben Morris",
-      "Roles and Responsibilities*": "Speed, Agility, Nutrition",
-    },
-  ]
+
   // const donations = [
   //   {
   //     "Total Donation Level": "$4000",
@@ -97,9 +76,8 @@ const Coaches = () => {
           <SectionTitle title={`Coaches`} />
           <Table
             headers={createHeaders(coachesHeaders)}
-            body={createRows(coaches, "coaches")}
+            body={createRows(Data.coaches, "coaches")}
           />
-
         </div>
         {/* <div className="mb-8">
           <SectionTitle title={`Costs for Spring/Summer 2020`} />
