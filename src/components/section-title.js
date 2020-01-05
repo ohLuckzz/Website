@@ -7,7 +7,7 @@ export default ({ title }) => {
         <img className="md-img" src={Logo} />
       </div> */}
       <div className="px-4 py-2">
-        <h3 className="text-center">{title}</h3>
+        <h2 className="text-center">{title}</h2>
       </div>
     </div>
   )

@@ -10,6 +10,7 @@ import HighCountryDisaster from "../images/sponsors/hcdisaster.png"
 import HomeRunIcon from '../images/home-run.svg'
 import TripleIcon from '../images/triple.svg'
 import DoubleIcon from '../images/double.svg'
+import SingleIcon from '../images/single.svg'
 
 import Product1 from '../images/product-1.png'
 import Product2 from '../images/product-2.png'
@@ -30,8 +31,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       {useMemo(() => {
         return (
-          // animationSpeed={2000} autoPlay={6000}
-          <div className="relative">
+          <div className="relative" animationSpeed={2000} autoPlay={6000}>
             <Carousel infinite  >
               <CarouselItem
                 image={`home-img-2`}
@@ -266,10 +266,10 @@ const IndexPage = () => {
 
           <div className="flex flex-wrap">
 
-            <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
+            <div className="flex items-center flex-col py-4 w-full sm:w-1/4">
               <div className="flex flex-wrap justify-center items-center">
                 <div className="px-4">
-                  <img className="sm-img" alt="Homerun Icon" src={HomeRunIcon} />
+                  <img className="xsm-img" alt="Homerun Icon" src={HomeRunIcon} />
                 </div>
                 <h3 className="text-center text-white">Home Run ($1000+)</h3>
               </div>
@@ -277,10 +277,10 @@ const IndexPage = () => {
                 <SponsorItem src={Piedmont} alt={"Piedmont"} height={'hr'} />
               </a>
             </div>
-            <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
+            <div className="flex items-center flex-col py-4 w-full sm:w-1/4">
               <div className="flex flex-wrap justify-center items-center">
                 <div className="px-4">
-                  <img className="sm-img" alt="Triple Icon" src={TripleIcon} />
+                  <img className="xsm-img" alt="Triple Icon" src={TripleIcon} />
                 </div>
                 <h4 className="text-center text-white">Triple ($500+)</h4>
               </div>
@@ -288,10 +288,10 @@ const IndexPage = () => {
                 <SponsorItem src={AppHealthcare} alt={"App Healthcare"} height={'triple'} />
               </a>
             </div>
-            <div className="flex items-center flex-col py-4 w-full sm:w-1/3">
+            <div className="flex items-center flex-col py-4 w-full sm:w-1/4">
               <div className="flex flex-wrap justify-center items-center">
                 <div className="px-4">
-                  <img className="sm-img" alt="Double Icon" src={DoubleIcon} />
+                  <img className="xsm-img" alt="Double Icon" src={DoubleIcon} />
                 </div>
                 <h5 className="text-center text-white font-bold">Double ($250+)</h5>
               </div>
@@ -302,6 +302,14 @@ const IndexPage = () => {
                 <SponsorItem height={'double'} alt={"High Country Disaster"} src={HighCountryDisaster} />
               </a>
               <SponsorItem height={'double'} text={"Frank & Debbie Plotts"} />
+            </div>
+            <div className="flex items-center flex-col py-4 w-full sm:w-1/4">
+              <div className="flex flex-wrap justify-center items-center">
+                <div className="px-4">
+                  <img className="xsm-img" alt="Single Icon" src={SingleIcon} />
+                </div>
+                <h5 className="text-center text-white font-bold">Single ($100+)</h5>
+              </div>
             </div>
           </div>
         </div>

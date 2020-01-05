@@ -102,6 +102,12 @@ button {
   margin: 0 auto;
 }
 
+.xsm-img {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+}
+
 .sm-img {
   width: 45px;
   min-width: 45px;
