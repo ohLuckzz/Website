@@ -51,7 +51,7 @@ export default {
         rotation. Kids want to move, they want high energy, our
         practices should be that. Kids love games and they love to
         compete; our practices should have a lot of both.`,
-      `Continous Learning – We are not professional coaches, but we constantly
+      `Continous learning – We are not professional coaches, but we constantly
         seek insight from baseball professionals to help us get better.`,
       `Cross train – We are strong advocates that kids should play a
         lot of different sports. They build more
