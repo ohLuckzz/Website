@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Header from "./header"
@@ -16,19 +15,9 @@ import "./table.css"
 import "./index.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div
         className="min-h-screen flex flex-col justify-between"
         style={{ paddingTop: "142px" }}
@@ -42,7 +31,10 @@ const Layout = ({ children }) => {
                 <div className="p-2">
                   <FontAwesomeIcon color={"white"} icon={"envelope"} />
                 </div>
-                <a className="p-2 text-white no-underline font-normal" href="mailto:markolewis@gmail.com">
+                <a
+                  className="p-2 text-white no-underline font-normal"
+                  href="mailto:markolewis@gmail.com"
+                >
                   markolewis@gmail.com
                 </a>
               </div>
@@ -50,7 +42,10 @@ const Layout = ({ children }) => {
                 <div className="p-2">
                   <FontAwesomeIcon color={"white"} icon={"phone"} />
                 </div>
-                <a className="p-2 text-white no-underline font-normal" href="tel:857-231-2756">
+                <a
+                  className="p-2 text-white no-underline font-normal"
+                  href="tel:857-231-2756"
+                >
                   857-231-2756
                 </a>
               </div>
