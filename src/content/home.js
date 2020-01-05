@@ -5,7 +5,7 @@ export default {
   siteTitleBody: (
     <span>
       The High Country Havoc is a non-profit youth baseball organization located
-      in Boone, NC. We are an affiliate of the
+      in Boone, NC. We are an affiliate of the 
       <a
         className="text-white"
         href="https://www.bigleaguecamp.com/"
