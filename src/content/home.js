@@ -22,7 +22,7 @@ export default {
   purpose: {
     title: "Our Purpose",
     body: `Create lifelong memories for our kids, teach
-    valuable lessons through competitive baseball, and develop better
+    valuable lessons through competitive baseball, and develop well-rounded
     athletes that can go on to live active, healthy, and productive lives.`,
   },
 
@@ -37,8 +37,7 @@ export default {
   vision: {
     title: "Our Vision",
     body: `Create a model youth sports organization in the High Country that
-    fosters an environment where kids deepen their love of baseball, build
-    lifelong friendships, and learn valuable life lessons and skills.`,
+    balances character and athlete development in novel ways so kids can thrive.`,
   },
 
   value1: {
