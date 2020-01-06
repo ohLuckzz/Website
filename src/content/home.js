@@ -97,7 +97,7 @@ export default {
     body: `Our goals are to create experiences where kids
     have a ton of fun, learn valuable life skills, and become better
     athletes. We don’t view these as conflicting goals, rather, they support
-    and reinforce each other if done well. At young ages, fun and enjoyment
+    and reinforce each other if done well. At young ages, fun, excitement, energy, and repetition
     are the catalyst to player development.`,
   },
 
