@@ -42,7 +42,7 @@ export default {
         when they stop having fun…period. We can’t ever lose sight of
         that.`,
       `It’s not all fun! – We help them
-        understand how their can be different types of fun, and
+        understand how there can be different types of fun, and
         sometimes you need to endure some discomfort in the short-term
         to have fun in the long-term.`,
       `Practice design – We take practice design seriously. We are
@@ -112,7 +112,7 @@ export default {
         _: "Rec. Ball Suggestion:",
         "Blue Group": `Not Encouraged`,
         "Red Group": `Slightly Encouraged`,
-        "White Group": `Heavily Encouraged`,
+        "White Group": `Highly Encouraged`,
       },
     ],
     close: `We will work to ensure that each kid feels as though they are
