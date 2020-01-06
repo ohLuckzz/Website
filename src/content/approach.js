@@ -65,7 +65,7 @@ export default {
         years old. As a result, our objective is to help kids get to
         that point equipped with the following: solid fundamentals, a strong work ethic, comfort in competition,and a love for the game.`,
     ],
-    close: `Together, our focus on character development and athlete
+    close: `Together, our focus on character and athlete
     development defines our developmental philosophy. We want to win today, but our focus is on developing
     people and athletes that can win throughout their lives.`,
   },
@@ -79,7 +79,7 @@ export default {
     bullets: [
       `We seek to have up to 16 kids on The Havoc team. To build this
       team we start with the kids that were on the team last year.
-      We then huld an assessment day for other kids interested in
+      We then hold an assessment day for other kids interested in
       joining The Havoc team. If we feel like there are kids and
       families that align to our values and can help us be more
       competitive, they are added to the Havoc Team.`,
