@@ -105,8 +105,8 @@ export default {
     title: "Long-term Focus",
     body: (
       <span>
-        We strive to be competitive today, but we focus on growing each child’s
-        love for the game, building a solid foundation of fundamentals, and
+        We focus on growing each child’s
+        love for the game, building solid fundamentals, and
         helping them become better people and athletes. We are diligent about
         issues of arm care and are guided by USA Baseball’s{" "}
         <a
