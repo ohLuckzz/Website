@@ -39,9 +39,9 @@ export default {
   tournamentText: `*In addition to our tournament schedule, we will also aim to have
   6-8 single games with local travel teams.`,
   inSeasonPracticeSchedule: [
-    { date: "Tuesdays", time: "5:00 - 6:30", place: "TBD" },
-    { date: "Thursdays", time: "4:00 - 5:30", place: "TBD" },
-    { date: "Sundays", time: "2:00 - 4:00", place: "Parks and Rec." },
+    { date: "Tuesdays", time: "5:00 - 6:45", place: "TBD" },
+    { date: "Thursdays", time: "4:00 - 5:45", place: "TBD" },
+    { date: "Sundays", time: "2:00 - 4:30", place: "Parks and Rec." },
   ],
   inSeasonPracticeText:
     "*Mid-week practices will start the week of March 16. New for 2020 will also be a structured at home program so athletes  can practice on their own too.",
