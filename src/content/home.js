@@ -29,8 +29,8 @@ export default {
   mission: {
     title: "Our Mission",
     body: `Complement and partner with other youth
-    sports organizations in our area, offering additional competitive
-    opportunities for kids in the High Country while adopting the most
+    sports organizations in the High Country, offering additional competitive
+    opportunities for kids while adopting the most
     innovative practices in youth athlete development.`,
   },
 
