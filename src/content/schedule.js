@@ -12,7 +12,7 @@ export default {
     },
     {
       Date: "February 29th - March 1st",
-      Time: "2:00 - 4:00",
+      Time: "11:00AM - 2:00PM",
       Place: "Big League Camp, Marion",
     },
     {
