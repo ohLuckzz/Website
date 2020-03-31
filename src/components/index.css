@@ -142,61 +142,6 @@ button {
   background-size: cover;
 }
 
-.home-img {
-  background-image: url(../images/pitching.png);
-  @apply picture-standard;
-}
-
-.home-img-2 {
-  background-image: url(../images/team.jpg);
-  @apply picture-standard;
-  background-position-y: 80%;
-}
-.home-img-3 {
-  background-image: url(../images/fun.png);
-  @apply picture-standard;
-}
-.home-img-4 {
-  background-image: url(../images/teamwork.jpg);
-  @apply picture-standard;
-}
-.home-img-5 {
-  background-image: url(../images/competition.jpg);
-  @apply picture-standard;
-}
-.home-img-6 {
-  background-image: url(../images/friendship.jpg);
-  @apply picture-standard;
-}
-.home-img-7 {
-  background-image: url(../images/practice.png);
-  @apply picture-standard;
-  background-position-y: 0%;
-}
-.home-img-8 {
-  background-image: url(../images/family.png);
-  @apply picture-standard;
-  background-position-y: 0%;
-}
-.effort-img {
-  background-image: url(../images/effort.png);
-  @apply picture-standard;
-  background-position-y: 0%;
-}
-
-.home-card-1 {
-  background-image: url(../images/big-league-1.jpg);
-  @apply picture-standard;
-}
-.home-card-2 {
-  background-image: url(../images/big-league-2.jpg);
-  @apply picture-standard;
-}
-.home-card-3 {
-  background-image: url(../images/big-league-3.jpg);
-  @apply picture-standard;
-}
-
 .home-img-overlay {
   background-color: #000;
   width: 100%;
@@ -269,10 +214,6 @@ button {
   max-width: 800px;
 }
 
-.community-img {
-  background-image: url(../images/pitching.png);
-  @apply picture-standard;
-}
 
 .show-no-height-img-mobile {
   height: 100%;

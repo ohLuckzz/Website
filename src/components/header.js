@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
-import Logo from "../images/logo.png"
+import Logo from "../images/Logo.jpg"
 
 const Header = ({ siteTitle }) => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -26,19 +26,19 @@ const Header = ({ siteTitle }) => {
   const getLinks = () => {
     return (
       <>
-        <Link className="my-4 text-white mx-4 no-underline" to="/">
-          Home
+        <Link className="my-4 text-green-700 mx-4 no-underline" to="/home/">
+          home
         </Link>
-        <Link className="my-4 text-white mx-4 no-underline" to="/schedule/">
-          Schedule
+        <Link className="my-4 text-green-700 mx-4 no-underline" to="/about/">
+          about
         </Link>
-        <Link className="my-4 text-white mx-4 no-underline" to="/approach/">
-          Approach
+        <Link className="my-4 text-green-700 mx-4 no-underline" to="/contact/">
+          say hello
         </Link>
-        <Link className="my-4 text-white mx-4 no-underline" to="/team/">
-          Team
+        <Link className="my-4 text-green-700 mx-4 no-underline" to="/work/">
+          work
         </Link>
-        <Link className="my-4 text-white mx-4 no-underline" to="/coaches/">
+        <Link className="my-4 text-green-700 mx-4 no-underline" to="/coaches/">
           Coaches
         </Link>
       </>
@@ -46,7 +46,7 @@ const Header = ({ siteTitle }) => {
   }
 
   const renderDesktop = links => {
-    return <div className="text-white -mx-4 hidden sm:block">{links}</div>
+    return <div className="text-green-700 -mx-4 hidden sm:block">{links}</div>
   }
 
   const renderMobile = links => {
@@ -78,11 +78,11 @@ const Header = ({ siteTitle }) => {
     <header
       className={`${
         fixed ? `fixed` : `absolute`
-        } primary-bg shadow-md z-20 w-full`}
+        }  z-20 w-full`}
     >
-      <div className="relative items-center flex justify-between container py-4 px-10 m-center sm:px-0">
+      <div className="relative items-center flex flex-col justify-between container py-4 px-10 m-center sm:px-0">
         <Link to="/" >
-          <img alt={"High Country Havoc Logo"} className="xmd-img object-cover" src={Logo} />
+          <img alt={"High Country Havoc Logo"} className="md-img object-cover" src={Logo} />
         </Link>
         {renderDesktop(getLinks())}
         {renderMobile(getLinks())}
