@@ -8,6 +8,7 @@ import Logo from "../images/Logo.jpg"
 const Header = ({ siteTitle }) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [fixed, setFixed] = useState(false)
+  const [drawer, setDrawer] = useState("hidden")
 
   const scrollFn = () => {
     const headerPosition = document.querySelector("header").offsetHeight
@@ -15,33 +16,55 @@ const Header = ({ siteTitle }) => {
     setFixed(shouldBeFixed)
   }
 
-  useEffect(() => {
-    window.addEventListener("scroll", scrollFn)
+  const onHover = () => {
+    const drawerStatus = drawer === "hidden" ? "block" : "hidden"
+    setDrawer(drawerStatus)
+  }
 
-    return () => {
-      window.removeEventListener("scroll", scrollFn)
-    }
-  }, [])
+  // useEffect(() => {
+  //   window.addEventListener("scroll", scrollFn)
+
+  //   return () => {
+  //     window.removeEventListener("scroll", scrollFn)
+  //   }
+  // }, [])
 
   const getLinks = () => {
     return (
-      <>
-        <Link className="my-4 text-green-700 mx-4 no-underline" to="/home/">
+      <div className="flex">
+        <Link className="my-4 text-green-700 mx-4 no-underline" to="/">
           home
         </Link>
         <Link className="my-4 text-green-700 mx-4 no-underline" to="/about/">
           about
         </Link>
-        <Link className="my-4 text-green-700 mx-4 no-underline" to="/contact/">
+        <div
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          className=" relative mx-4"
+        >
+          <p className="mt-4 text-green-700 no-underline font-bold">work</p>
+          <div
+            className={`text-green-700 absolute font-bold no-underline ${drawer}`}
+          >
+            <Link className="no-underline" to="/digital/">
+              <p>digital</p>
+            </Link>
+            <Link className="no-underline" to="/physical/">
+              <p>physical</p>
+            </Link>
+          </div>
+        </div>
+        <Link className="my-4 text-green-700 mx-4 no-underline" to="/sayhello/">
           say hello
         </Link>
-        <Link className="my-4 text-green-700 mx-4 no-underline" to="/work/">
-          work
+        <Link
+          className="my-4 text-green-700 mx-4 no-underline"
+          to="/exhibition/"
+        >
+          exhibition
         </Link>
-        <Link className="my-4 text-green-700 mx-4 no-underline" to="/coaches/">
-          Coaches
-        </Link>
-      </>
+      </div>
     )
   }
 
@@ -52,9 +75,7 @@ const Header = ({ siteTitle }) => {
   const renderMobile = links => {
     return (
       <>
-        <div
-          className="block sm:hidden -mx-4 cursor-pointer"
-        >
+        <div className="block sm:hidden -mx-4 cursor-pointer">
           <FontAwesomeIcon
             color={"white"}
             size={"2x"}
@@ -75,14 +96,14 @@ const Header = ({ siteTitle }) => {
   }
 
   return (
-    <header
-      className={`${
-        fixed ? `fixed` : `absolute`
-        }  z-20 w-full`}
-    >
+    <header className={`${fixed ? `fixed` : `absolute`}  z-20 w-full`}>
       <div className="relative items-center flex flex-col justify-between container py-4 px-10 m-center sm:px-0">
-        <Link to="/" >
-          <img alt={"High Country Havoc Logo"} className="md-img object-cover" src={Logo} />
+        <Link to="/">
+          <img
+            alt={"High Country Havoc Logo"}
+            className="md-img object-cover"
+            src={Logo}
+          />
         </Link>
         {renderDesktop(getLinks())}
         {renderMobile(getLinks())}

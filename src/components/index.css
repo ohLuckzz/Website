@@ -36,7 +36,7 @@ ul {
 }
 
 a {
-  @apply alternative-color;
+  @apply text-green-700;
   text-decoration: underline;
   font-weight: 700;
 }
@@ -213,7 +213,6 @@ button {
 .container-text {
   max-width: 800px;
 }
-
 
 .show-no-height-img-mobile {
   height: 100%;
